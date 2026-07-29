@@ -31,9 +31,7 @@ jobs:
         pip install flet
 
 - name: 🛠️ Construir APK para Android
-      run: |
-        flet build apk --suppress-analytics
-
+      run: flet build apk --suppress-analytics
     - name: 📤 Subir APK como artefacto descargable
       uses: actions/upload-artifact@v4
       with:
